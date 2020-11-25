@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #161A1D;
+    font-family: 'Arvo', serif;
+}
+
+body {
+    background-color: #F5F3F4;
+    font-family: 'Arvo', serif;
+}
+
+@media only screen and (max-width: 768px) {
+    #title {
+        font-size: 1rem;
+    }
+}
+
+button {
+    color: #F5F3F4;
+    background-color: #BA181B;
+    border: none;
+    width: 120px;
+    height: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+:checked + span {
+    color: #BA181B;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 250px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #161A1D;
+    outline: 0;
+  }
+  
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #BA181B;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+  
+input[type=range]:focus {
+    outline: none;
+}
+
+#home {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+label {
+    color: #161A1D;
+    background-color: #F5F3F4;
+    font-weight: bold;
+    padding: 4px 6px 4px 6px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#passwordBox {
+    color: #BA181B;
+    background-color:#F5F3F4;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+#title {
+    margin: auto;
+    text-align: center;
+    padding-top: 30vh;
+    padding-bottom: 6vh;
+    font-size: 5rem;
+}
+
+section {
+    padding-bottom: 3vh;
+}
+
+#passwordBox, #rangeSlider {
+    margin-top: 1.25vh;
+}
+
+#rangeLabel {
+    padding-bottom: 2vh;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.passwordZone {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+.passwordZone > * {
+    margin: auto;
+}
+
+.checkboxes-container {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: auto;
+}
+
+
