@@ -3,8 +3,52 @@
   src: url(fonts/Questrial-Regular.ttf);
 }
 
+/* a simple CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  list-style: none;
+  border: 0;
+}
+
+/* Mobile CSS */
 body {
   background-color: #f2f4f3;
   color: #313638;
   font-family: Questrial, sans-serif;
+  font-size: 2em;
+  margin: auto;
+  width: 85%;
+}
+
+nav {
+  display: flexbox;
+  flex-direction: row;
+  width: 100vw;
+}
+
+#logo {
+  justify-content: flex-start;
+}
+
+#dropbtn {
+  justify-content: flex-end;
+}
+
+.about {
+  height: 700px;
+}
+
+.links {
+  display: none;
+}
+
+.skills {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.skillLists li {
+  padding-top: 20px;
 }
