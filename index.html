@@ -1,43 +1,54 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="generator.js"></script>
-        <script src="clipboard.min.js"></script>
-        <title>Password Generator</title>
-        <link rel="stylesheet" href="style.css"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body>
         <header>
             <nav>
-                <svg id="home" width="63" height="38" viewBox="0 0 63 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.23223 17.2322C0.255921 18.2085 0.25592 19.7914 1.23223 20.7677L17.1421 36.6777C18.1184 37.654 19.7013 37.654 20.6777 36.6777C21.654 35.7013 21.654 34.1184 20.6777 33.1421L6.53553 19L20.6777 4.85785C21.654 3.88154 21.654 2.29863 20.6777 1.32231C19.7014 0.346003 18.1184 0.346003 17.1421 1.32231L1.23223 17.2322ZM63 16.5L3 16.5L3 21.5L63 21.5L63 16.5Z" fill="#161A1D"/>
-                </svg>
-                    
+                <ol id="olNav">
+                    <li>About</li>
+                    <li>Work</li>
+                    <li>Contact</li>
+                </ol>
+                <button id="github">Github</button>
+                <button id="resume">Resume</button>
             </nav>
-            <h1 id="title">Password Generator</h1>
+            <title>Cody Klimkofski</title>
+            <div id="intro">
+                <p>Hi, I'm</p>
+                <h1 id="name">Cody Klimkofski.</h1>
+                <h1 id="description">Sophomore computer science student at Purdue University Fort Wayne.</h1>
+            </div>
         </header>
-        <section class="passwordZone">
-            <h3 name="rangeLabel" id="rangeLabel">I want my password to have: 8 characters</h3>
-            <input type="text" name="passwordBox" id="passwordBox" readonly>
-            <input type="range" name="rangeSlider" id="rangeSlider" min="8" max="32" value="8" oninput="rangeSliderNum()">
-        </section>
+        <main>
+            <div id="about">
+                <h2>About Me</h2>
+                <p>I'm a real one g, no cap, for sure fire ass nigga</p>
+                <p>I've recently worked with:</p>
+                <div id="skills">
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>HTML & CSS</li>
+                        <li>Flask</li>
+                    </ul>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+            </div>
 
-        <section class="checkboxes-container">
-            <label for="lowerCheck" id="lowerLabel"><input type="checkbox" name="lowerCheck" id="lowerCheck" checked><span>lowercase letters</span></label>                
-            <label for="numsCheck"><input type="checkbox" name="numsCheck" id="numsCheck" checked><span>numbers</span></label>
-            <label for="symbCheck"><input type="checkbox" name="symbCheck" id="symbCheck" checked><span>symbols</span></label>
-            <label for="upperCheck"><input type="checkbox" name="upperCheck" id="upperCheck" checked><span>uppercase letters</span></label>
-        </section>
-
-        <section class="button-container">
-            <button name="generateButton" id="generateButton" onclick="generatePassword()">Generate</button>
-            <script>
-                (function(){
-                    new ClipboardJS(".copyButton");
-                })();
-            </script>
-            <button class="copyButton" name="copyButton" id="copyButton" data-clipboard-target="#passwordBox">Copy</button>
-        </section>
+            <div id="projects">
+                <div ckass="project">
+                    <h2>My Projects</h2>
+                    <p>Featured Project</p>
+                    <h3>Password Generator</h3>
+                    <img src="images/generator.png" alt="A screenshot of my password generator website" href="generator/generator.html">
+                </div>
+            </div>
+        </main>
     </body>
 </html>
