@@ -32,8 +32,10 @@ nav {
   justify-content: flex-start;
 }
 
-#dropbtn {
+#dropdown {
   justify-content: flex-end;
+  height: 60px;
+  width: 60px;
 }
 
 #name {
