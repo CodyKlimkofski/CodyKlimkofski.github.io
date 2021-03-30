@@ -23,19 +23,28 @@ body {
 }
 
 nav {
-  display: flexbox;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
   flex-direction: row;
-  width: 100vw;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  height: 60px;
+  background-color: red;
+  margin: auto;
 }
 
 #logo {
-  justify-content: flex-start;
+  height: 50px;
+  width: 50px;
+  margin: auto;
 }
 
 #dropdown {
-  justify-content: flex-end;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
+  margin: auto;
 }
 
 #name {
@@ -49,13 +58,19 @@ nav {
   align-items: center;
   flex-direction: column;
   margin: auto;
-  height: 100vh;
+  height: 90vh;
   width: 60vw;
   padding-left: 2vw;
+  padding-bottom: 10vh;
 }
 
-.links {
+#links {
   display: none;
+  flex-direction: column;
+  position: absolute;
+  padding-top: 70px;
+  background-color: yellow;
+  max-width: 8rem;
 }
 
 .skills {

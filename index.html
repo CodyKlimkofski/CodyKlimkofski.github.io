@@ -6,16 +6,26 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <script>
+            function dropDown() {
+                var dropdownBtn = document.getElementById('dropdown');
+                var menuContent = document.getElementById('links');
+
+                if (menuContent.style.display == '') {
+                    menuContent.style.display = 'flex';
+                } else {
+                    menuContent.style.display = '';
+                }
+            }
+        </script>
         <header>
             <nav>
-                <a id="logo" href="#contact">CK</a>
-                <a><img src="images/menu.svg" alt="A menu button" id="dropdown"></a>
-                <div class="links">
-                    <a >About</a>
+                <img src="images/logo.svg" alt="CK logo" id="logo">
+                <img onclick="dropDown()" src="images/menu.svg" alt="A menu button" id="dropdown"  onclick="document.getElementById('links').classList.toggle('show')">
+                <div id="links">
+                    <a>About</a>
                     <a>Projects</a>
                     <a>Contact</a>
-                    <button id="github">Github</button>
-                    <button id="resume">Resume</button>
                 </div>
             </nav>
             <title>Cody Klimkofski</title>
