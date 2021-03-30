@@ -24,26 +24,23 @@ body {
 
 nav {
   display: flex;
-  position: relative;
   justify-content: space-between;
-  flex-direction: row;
-  padding-top: 15px;
-  height: 60px;
-  width: 100vw;
   background-color: red;
-  margin: auto;
 }
 
 #logo {
   height: 50px;
   width: 50px;
-  margin: auto;
+  margin-left: 15px;
+  margin-top: 15px;
 }
 
 #dropdown {
-  height: 51px;
+  height: 50px;
   width: 50px;
-  margin: auto;
+  margin-right: 15px;
+  margin-top: 10px;
+  background-color: yellow;
 }
 
 #generator {
