@@ -62,19 +62,18 @@ nav {
 .about {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin: auto;
+  margin-top: 20vh;
   height: 100vh;
   width: 60vw;
-}
-
-#about {
-  padding-top: 10vh;
 }
 
 .about > h2 {
   color: #0d19a3;
   padding-bottom: 2vh;
+}
+
+.aboutInfo {
 }
 
 #links {
