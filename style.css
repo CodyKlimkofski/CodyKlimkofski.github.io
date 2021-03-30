@@ -46,6 +46,12 @@ nav {
   margin: auto;
 }
 
+#generator {
+  display: block;
+  width: 80vw;
+  margin: auto;
+}
+
 #name {
   padding-bottom: 10vh;
   color: firebrick;
