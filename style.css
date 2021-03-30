@@ -25,7 +25,6 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: red;
 }
 
 #logo {
@@ -36,11 +35,9 @@ nav {
 }
 
 #dropdown {
-  height: 50px;
-  width: 50px;
+  width: 65px;
   margin-right: 15px;
-  margin-top: 10px;
-  background-color: yellow;
+  margin-top: 6px;
 }
 
 #generator {
@@ -51,7 +48,7 @@ nav {
 
 #name {
   padding-bottom: 10vh;
-  color: firebrick;
+  color: #0d19a3;
 }
 
 .intro {
@@ -60,10 +57,23 @@ nav {
   align-items: center;
   flex-direction: column;
   margin: auto;
-  height: 100vh;
+  height: 90vh;
   width: 60vw;
   padding-left: 2vw;
-  padding-bottom: 10vh;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 10vh;
+  width: 60vw;
+  height: 90vh;
+}
+
+.about > h2 {
+  color: #0d19a3;
+  padding-bottom: 2vh;
 }
 
 #links {
