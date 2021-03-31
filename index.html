@@ -21,13 +21,12 @@
         <header>
             <nav>
                 <img src="images/logo.svg" alt="CK logo" id="logo" onclick="document.location='index.html'">
-                <div id="dropdownContainer">
-                    <img onclick="dropDown()" src="images/menu.svg" alt="A menu button" id="dropdown">
-                        <div id="links">
-                            <a href="#about">About</a>
-                            <a href="#projects">Projects</a>
-                            <a href="#contact">Contact</a>
-                        </div>
+                <img onclick="dropDown()" src="images/menu.svg" alt="A menu button" id="dropdown">
+                    <div id="links">
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
                 </div>
             </nav>
             <title>Cody Klimkofski</title>
@@ -43,7 +42,7 @@
             <div class="about">
                 <h2 id="about">About Me</h2>
                 <p class="aboutInfo">Introduced to Powershell scripting in early high school, coding and IT quickly became one of my strong interests.</p>
-                <p class="aboutInfo">Some of my other hobbies include playing chess and performing in a band with some of my friends.</p>
+                <p class="aboutInfo">I'm currently available and seeking an internship position in software development.</p>
                 <h3 id="skillStart">I've recently worked with</h3>
                 <div class="skillLists">
                     <ul>
@@ -63,19 +62,22 @@
                 <h2 id="projects">My Projects</h2>
                 <p id="featured">Featured Project:</p>
                 <h3>Password Generator</h3>
-                <img class="projImg" src="images/generator.PNG" alt="A screenshot of my password generator website" onclick="document.location='generator.html'">
+                <img class="projImg" id="generatorSmall" src="images/generator.PNG" alt="A screenshot of a password generator website" onclick="document.location='generator.html'">
+                <img class="projImg" id="generatorLarge" src="images/generatorLarge.PNG" alt="A screenshot of a password generator" onclick="document.location='generator.html'">
                 <div class="description">
                     <p>A password generator with a range of 4 different character selection types built with native HTML/CSS & JavaScript.</p>
-                    <a href="https://github.com/CodyKlimkofski/PasswordGenerator">
-                        <img class="github" src="images/GitHub.png" alt="an image of the Github logo">
-                    </a>
+                    <a href="https://github.com/CodyKlimkofski/PasswordGenerator"><img src="images/github.svg" height="100%" alt="an image of the Github logo"></a>
                 </div>
             </div>
 
             <div class="contact">
                 <h1 id="contact">Contact Me</h1>
-                <p>I'm currently available and seeking an internship position in software engineering.</p>
-                <p>Whether you believe I'm a good fit for your position, have a question, or just want to say hello, my inbox is always open on <a href="https://www.linkedin.com/in/cody-klimkofski-5b959820a/">LinkedIn</a> and <a href="mailto:cody.klimkofski@gmail.com">my email</a>.</p>
+                <p>Whether you believe I'm a good fit for your position, have a question, or just want to say hello, my inbox is always open.</p>
+                <div id="contactLinks">
+                    <a href="https://www.linkedin.com/in/cody-klimkofski-5b959820a/"><img src="images/linkedin.svg" height="100%" alt="Linked In logo"></a>
+                    <a href="mailto:cody.klimkofski@gmail.com"><img src="images/email.svg" height="100%" alt="Email SVG icon"></a>
+                    <a href="https://github.com/CodyKlimkofski"><img src="images/github.svg" height="100%" alt="Github logo"></a>
+                </div>
             </div>
         </main>
         <footer>
