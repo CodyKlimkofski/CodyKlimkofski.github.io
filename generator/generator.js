@@ -1,6 +1,6 @@
 function generatePassword() {
-    let charList = [];
-    let resultString = "";
+    var charList = [];
+    var resultString = "";
     if (document.getElementById("lowerCheck").checked) {
         charList.push("abcdefghijklmnopqrstuvwxyz");
     } if (document.getElementById("upperCheck").checked) {
@@ -13,8 +13,8 @@ function generatePassword() {
 
     if (charList.length > 0) {
         for (var i = 0; i < parseInt(document.getElementById("rangeSlider").value); i++) {
-            let randomNum = Math.floor(Math.random() * charList.length);
-            let randomChar = Math.floor(Math.random() * charList[randomNum].length);
+            var randomNum = Math.floor(Math.random() * charList.length);
+            var randomChar = Math.floor(Math.random() * charList[randomNum].length);
             resultString += charList[randomNum][randomChar];
         }
     }    
@@ -23,9 +23,9 @@ function generatePassword() {
 }
 
 function rangeSliderNum() {
-    let rangeValue = document.getElementById("rangeSlider").value;
+    var rangeValue = document.getElementById("rangeSlider").value;
     document.getElementById("rangeLabel").innerHTML = "I want my password to have: " + rangeValue + " characters";
-    let newWidth = rangeValue*11.5;
+    var newWidth = rangeValue*11.5;
     document.getElementById("passwordBox").style.width = `${newWidth}px`;
     generatePassword();
 }

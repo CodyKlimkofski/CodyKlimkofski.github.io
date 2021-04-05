@@ -260,11 +260,8 @@ nav > img {
   }
 }
 
-@media only screen and (min-width: 680px) and (max-width: 899px) {
-}
-
 /* Desktop/Laptop/Large CSS */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 899px) {
   body {
     font-size: 3.5em;
     max-width: 100vw;
@@ -275,11 +272,19 @@ nav > img {
   }
 
   .contact {
-    margin-bottom: 27vh;
+    margin-bottom: 28vh;
+  }
+
+  .description {
+    height: 40px;
   }
 
   .intro {
-    margin-top: 23vh;
+    margin-top: 25vh;
+  }
+
+  .projects {
+    margin-bottom: 50vh;
   }
 
   #contactLinks {
@@ -296,5 +301,28 @@ nav > img {
 
   #skillStart {
     width: 38vw;
+  }
+}
+
+/* XL CSS */
+@media only screen and (min-width: 2000px) {
+  body {
+    font-size: 5em;
+  }
+
+  .about {
+    margin-top: 50vh;
+  }
+
+  .contact {
+    margin-top: 10vh;
+  }
+
+  #contactLinks {
+    width: 20vw;
+  }
+
+  #contactLinks > a {
+    height: 80px;
   }
 }
